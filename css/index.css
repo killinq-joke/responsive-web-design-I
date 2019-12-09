@@ -172,6 +172,11 @@ nav {
 }
 
 @media (max-width: 800px) {
+	
+	nav {
+		justify-content: center;
+	}
+	
 	.nav-button {
 		display:flex;
 		order: 0;
@@ -191,7 +196,7 @@ nav {
 }
 
 .top-nav a {
-  margin: 0px 40px 0 0;
+  margin: 0 20px;
   text-decoration: none;
   color: gray;
   
