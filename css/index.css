@@ -157,10 +157,10 @@ h5 {
 }
 
 @media (max-width: 800px) {
-	.container {
-		width: 90%;
-		margin: 0 auto;
-	  }
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 
 nav {
@@ -169,41 +169,66 @@ nav {
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 
 @media (max-width: 800px) {
-	
-	nav {
-		justify-content: center;
-	}
-	
-	.nav-button {
-		display:flex;
-		order: 0;
-		justify-content: space-between;
-		padding: 30px;
-	}
+  nav {
+    justify-content: center;
+  }
 
-	.nav-logo {
-		order: -1;
-	}
+  .nav-button {
+    display: flex;
+    order: 0;
+    justify-content: space-between;
+    padding: 30px;
+  }
 
-	nav {
-		flex-flow: column nowrap;
-	}
+  .nav-logo {
+    order: -1;
+  }
 
-  
+  nav {
+    flex-flow: column nowrap;
+  }
+}
+
+@media (max-width: 500px) {
+  nav {
+    padding: 0;
+  }
+
+  .logo {
+    padding: 30px;
+    align-self: center;
+    justify-self: center;
+  }
+
+  .nav-button {
+    display: flex;
+    flex-flow: column nowrap;
+    align-content: center;
+    justify-items: center;
+    width: 112%;
+    padding: 0;
+  }
+
+  .nav-button a {
+    text-align: center;
+    width: 100%;
+    border: 1px solid gray;
+    align-self: center;
+    padding: 30px;
+  }
 }
 
 .top-nav a {
   margin: 0 20px;
   text-decoration: none;
   color: gray;
-  
+
   /* align-self: center; */
 }
-
-
 
 a:hover {
   color: red;
@@ -218,7 +243,7 @@ header {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  padding: 25px 0 7% 0;
+  padding: 25px 0 15% 0;
   border-bottom: 1px solid black;
 }
 header .div-index {
@@ -233,10 +258,6 @@ header div h1 {
   text-align: center;
 }
 
-h1 {
-  font-size: 30px;
-}
-
 .button {
   /* display: inline-block; */
   padding: 5px 15px;
@@ -247,34 +268,36 @@ h1 {
 }
 
 header {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 @media (max-width: 800px) {
+  header {
+    justify-content: center;
+  }
 
-    header {
-		justify-content: center;
-	}
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
 
-	.container {
-		width: 90%;
-		margin: 0 auto;
-	  }
-	
-	.header-img {
-		display: none;
-	}
+  .header-img {
+    display: none;
+  }
+}
 
-	
+@media (max-width: 500px) {
+  header div h1 {
+    font-size: 50px;
+  }
 }
 
 header .header-img {
   width: 380px;
   height: 380px;
   margin: 0 0 0 0;
-  
 }
 
 .sec-header {
@@ -308,9 +331,24 @@ header .header-img {
   align-items: flex-start;
 }
 
-.sec2 {
-  padding: 20px;
-  margin: 30px;
+@media (max-width: 500px) {
+  .top-section {
+    flex-flow: row wrap;
+  }
+
+  section {
+    flex-flow: column;
+    width: 100%;
+  }
+
+  .top-content, .bottom-content {
+    padding: 20px 0;
+  }
+
+   .container .contact h2, h2 {
+    font-size: 14px;
+  }
+
 }
 
 .top-sec-div p {
@@ -383,8 +421,4 @@ header .header-img {
 footer {
   text-align: center;
   padding: 10%;
-}
-
-@media (max-width: 500px) {
- 
 }
