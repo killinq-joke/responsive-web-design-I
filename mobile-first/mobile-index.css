@@ -175,7 +175,6 @@ nav {
 @media (max-width: 800px) {
   nav {
     justify-content: center;
-     flex-flow: column nowrap;
   }
 
   .nav-button {
@@ -189,6 +188,9 @@ nav {
     order: -1;
   }
 
+  nav {
+    flex-flow: column nowrap;
+  }
 }
 
 @media (max-width: 500px) {
@@ -276,6 +278,11 @@ header {
     justify-content: center;
   }
 
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
   .header-img {
     display: none;
   }
@@ -324,11 +331,6 @@ header .header-img {
   align-items: flex-start;
 }
 
-.top-content .bottom-content {
-	width: 33%;
-	margin: 10px;
-}
-
 @media (max-width: 500px) {
   .top-section {
     flex-flow: row wrap;
@@ -340,9 +342,7 @@ header .header-img {
   }
 
   .top-content, .bottom-content {
-    font-size: 20px;
     padding: 20px 0;
-    width: 100%;
   }
 
    .container .contact h2, h2 {
@@ -355,9 +355,20 @@ header .header-img {
   margin: 10px;
 }
 
-
-
-
+/* .top-section h2 {
+	font-size: 20px;
+}
+.top-section p {
+	font-size: 18px;
+	text-align: left;
+}
+.top-section .top-content {
+	display: flex;
+	align-content: flex-end;
+	width: 49%;
+	margin: 50px 0 50px 0;
+	padding: 5px;
+} */
 .middle-img {
   display: inline-block;
   width: 100%;
